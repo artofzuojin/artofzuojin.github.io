@@ -38,14 +38,24 @@ nav ul li a{
     font-size: 13px;
     font-family: 'Inter', sans-serif;
 }
-.active, nav ul li:hover{
+
+nav ul li a:hover{
+    color:#24326f
+}   
+
+nav ul li:hover{
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 10%;
 }
 
-.active, nav ul li a:hover{
+/* .active, nav ul li:hover{
+    background-color: #fff;
+    border-radius: 3px;
+} */
+
+/* .active, nav ul li a:hover{
     color:#24326f;
-}
+} */
 
 
 /* HOMEPAGE TEXT ALIGNMENT */
