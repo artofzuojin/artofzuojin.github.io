@@ -43,6 +43,10 @@ nav ul li a{
     border-radius: 3px;
 }
 
+.active, nav ul li a:hover{
+    color:#24326f;
+}
+
 
 /* HOMEPAGE TEXT ALIGNMENT */
 .row{
