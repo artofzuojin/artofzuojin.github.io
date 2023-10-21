@@ -39,7 +39,6 @@ nav ul li a{
     font-family: 'Inter', sans-serif;
 }
 .active, nav ul li:hover{
-    color:#2c14a3;
     background-color: #fff;
     border-radius: 3px;
 }
