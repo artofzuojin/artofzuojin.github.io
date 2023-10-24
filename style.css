@@ -24,16 +24,16 @@
     display: flex;
     align-items: center;
 }
-nav{
+.navbar{
     flex: 1;
     text-align: right;
 }
-nav ul li{
+.navbar ul li{
     list-style: none;
     display: inline-block;
     /* margin-left: 80px; */
 }
-nav ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #fff;
     /* font-size: 13px; */
@@ -44,8 +44,8 @@ nav ul li a{
     transition: .4s ease;
     font-family: 'Inter', sans-serif;
 }
-nav ul li .active,
-nav ul li a:hover{
+.navbar ul li .active,
+.navbar ul li a:hover{
     color:#576dce;
     background: #fff;
 
@@ -56,17 +56,20 @@ nav ul li a:hover{
 }
 
 .navbar ul li:hover .submenu-1{
-    display: block;
+    display: block !important;
     position: absolute;
-    background: #fff;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: -15px;
 }
 
 .navbar ul li a:hover .submenu-1 ul{
-    display: block;
+    display: block !important;
     color:#576dce;
-    margin: 10px;
+    margin: 5px;
+    padding: .7rem 1.2rem;
+    line-height: 1;
+    border-radius: 2rem;
+    transition: .4s ease;
 }
 
 
