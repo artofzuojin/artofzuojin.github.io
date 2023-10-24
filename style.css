@@ -9,7 +9,7 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(48, 48, 48, 0.7),rgba(48, 48, 48, 0.7)), url(/assets/background.jpg);
+    background-image: linear-gradient(rgba(48, 48, 48, 0.7),rgba(48, 48, 48, 0.7)), url(/assets/sea_on_rocks.jpg);
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -35,18 +35,25 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 1.05rem;
+    padding: .7rem 1.2rem;
+    line-height: 1;
+    border-radius: 2rem;
+    transition: .4s ease;
     font-family: 'Inter', sans-serif;
 }
-
+nav ul li .active,
 nav ul li a:hover{
-    color:#24326f
+    color:#24326f;
+    background: #fff;
+
 }   
 
-nav ul li:hover{
+/* nav ul li:hover{
     background-color: #fff;
-    border-radius: 10%;
-}
+    border-radius: 3px;
+} */
 
 /* .active, nav ul li:hover{
     background-color: #fff;
