@@ -1,0 +1,16 @@
+.section {
+    margin: 5% auto 10% 3%;
+}
+
+.sectionHeader{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+}
+
+.sectionHeader a{
+    color: #576dce;
+}
+
+.text {
+    font-size: 12px;
+}
