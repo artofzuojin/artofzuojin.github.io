@@ -3,14 +3,27 @@
 }
 
 .sectionHeader{
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 50px;
-}
-
-.sectionHeader a{
     color: #576dce;
 }
 
 .text {
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    align-items: start;
+    margin: 2% 2% 2% 0;
+}
+
+.col {
+    flex: 50%;
+    margin-right: 3%;
+    left: 0;
+    top:0;
 }

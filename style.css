@@ -12,6 +12,7 @@ Phones: max-width: 480px
 
 /* BACKGROUND */
 .container{
+    overflow-y: scroll;
     width: 100%;
     height: 100vh;
     /* background-image: linear-gradient(rgba(48, 48, 48, 0.7),rgba(48, 48, 48, 0.7)), url(/assets/sea_on_rocks.jpg); */
@@ -65,7 +66,7 @@ Phones: max-width: 480px
     display: block !important;
     position: absolute;
     margin-top: 25px;
-    /* margin-left: -15px; */
+    margin-left: -10px;
 }
 
 .navbar ul li a:hover .submenu-1 ul{
