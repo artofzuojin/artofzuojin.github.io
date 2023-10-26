@@ -112,6 +112,13 @@ h1{
     font-size: 100px;
     font-family: 'Playfair Display', serif;
 }
+
+h2{
+    color:#576dce;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+}
 p{
     color:#fff;
     font-size: 15px;
@@ -120,14 +127,14 @@ p{
 }
 
 /* BANNER */
-.banner{
+/* .banner{
     width: 100%;
     height: 11vh;
-    background-color:#fff;
+    background-color:#24326f;
     position: relative;
     opacity: 0.7;
     z-index: -1;
-    top:38px
+    top:38px;
 }
 
 .bannerSubheader{
@@ -150,10 +157,20 @@ p{
     top:49px;
     z-index:0;
     text-shadow: 0px 3px 3px #8c8c8c;
+} */
+
+.whiteBlock{
+    background:#fff;
+    width:100%;
+    padding:5% 5% 5% 5%;
 }
 
-
-
+/* .whiteBlockHeader{
+    text-align:center;
+    font-size:50px;
+    font-family: 'Playfair Display', serif;
+    font-weight:normal;
+} */
 
 /* SCROLLBAR */
 /* width */
