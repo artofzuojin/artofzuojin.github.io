@@ -123,7 +123,7 @@ h3
 {
     color:#576dce;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -135,16 +135,17 @@ p{
 }
 
 .whiteBlock{
-    background:#fff;
+    background:#ff9898;
     display: block;
     margin: 0px !important;
+    height: 800px;
     padding:5% 5% 5% 5%;
     opacity: 0.8
 }
 
 .floated{
     float: left;
-    width: 750px;
+    width: 600px;
     padding: 25px;
 }
 
