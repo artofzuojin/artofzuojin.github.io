@@ -20,7 +20,7 @@ Phones: max-width: 480px
     background-position: center;
     background-size: cover;
     padding-left: 4%;
-    padding-right: 4%;
+    padding-right: 4%; 
     box-sizing: border-box;
     position: fixed;
 }
@@ -103,7 +103,7 @@ Phones: max-width: 480px
 }
 
 .homecol{
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 
 /* HOMEPAGE TEXT */
@@ -123,7 +123,7 @@ h2{
 h3
 {
     color:#576dce;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
     font-family: 'Inter', sans-serif;
 }
@@ -170,8 +170,10 @@ p{
 
 .whiteBlock{
     background:#fff;
-    width:100%;
+    display: block;
+    margin: 0px !important;
     padding:5% 5% 5% 5%;
+    opacity: 0.8
 }
 
 /* .whiteBlockHeader{
