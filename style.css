@@ -13,7 +13,7 @@ Phones: max-width: 480px
 /* BACKGROUND */
 .container{
     overflow-y: scroll;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     /* background-image: linear-gradient(rgba(48, 48, 48, 0.7),rgba(48, 48, 48, 0.7)), url(/assets/sea_on_rocks.jpg); */
     background-image: url(/assets/torrent.jpg);
@@ -96,13 +96,13 @@ Phones: max-width: 480px
 
 
 /* HOMEPAGE TEXT ALIGNMENT */
-.row{
+.homerow{
     display: flex;
     height: 88%;
     align-items: center;
 }
 
-.col{
+.homecol{
     flex-basis: 40%;
 }
 
@@ -119,6 +119,15 @@ h2{
     font-family: 'Playfair Display', serif;
     text-align: left;
 }
+
+h3
+{
+    color:#576dce;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
 p{
     color:#fff;
     font-size: 15px;
@@ -160,7 +169,7 @@ p{
 } */
 
 .whiteBlock{
-    background:#fff;
+    background:#8affa9;
     width:100%;
     padding:5% 5% 5% 5%;
 }

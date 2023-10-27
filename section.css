@@ -26,4 +26,14 @@
     margin-right: 3%;
     left: 0;
     top:0;
-}
+} 
+
+@media screen and (max-width: 768px) {
+    .row {
+         flex-direction: column;
+    }
+ 
+    .col {
+     margin-bottom: 5%;
+    }
+ }
