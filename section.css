@@ -21,6 +21,11 @@
     margin: 2% 2% 2% 0;
 }
 
+.lineBreak {
+    height: 10px;
+    width: 100vw;
+}
+
 .col {
     flex: 50%;
     margin-right: 3%;

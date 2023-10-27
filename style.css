@@ -23,6 +23,7 @@ Phones: max-width: 480px
     padding-right: 4%; 
     box-sizing: border-box;
     position: fixed;
+    scroll-behavior: smooth;
 }
 
 /* NAVIGATION */
@@ -79,7 +80,6 @@ Phones: max-width: 480px
     transition: .4s ease;
 }
 
-
 /* nav ul li:hover{
     background-color: #fff;
     border-radius: 3px;
@@ -94,7 +94,6 @@ Phones: max-width: 480px
     color:#24326f;
 } */
 
-
 /* HOMEPAGE TEXT ALIGNMENT */
 .homerow{
     display: flex;
@@ -106,7 +105,7 @@ Phones: max-width: 480px
     flex-basis: 30%;
 }
 
-/* HOMEPAGE TEXT */
+/* TEXT */
 h1{
     color:#fff;
     font-size: 100px;
@@ -135,39 +134,6 @@ p{
     font-family: 'Inter', sans-serif;
 }
 
-/* BANNER */
-/* .banner{
-    width: 100%;
-    height: 11vh;
-    background-color:#24326f;
-    position: relative;
-    opacity: 0.7;
-    z-index: -1;
-    top:38px;
-}
-
-.bannerSubheader{
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    color: #576dce;
-    position: absolute;
-    transform:translateY(-50%);
-    top:49px;
-    z-index:0;
-    text-shadow: 0px 3px 3px #8c8c8c;
-}
-
-.bannerText{
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    color: #576dce;
-    position: absolute;
-    transform:translateY(-50%);
-    top:49px;
-    z-index:0;
-    text-shadow: 0px 3px 3px #8c8c8c;
-} */
-
 .whiteBlock{
     background:#fff;
     display: block;
@@ -176,12 +142,11 @@ p{
     opacity: 0.8
 }
 
-/* .whiteBlockHeader{
-    text-align:center;
-    font-size:50px;
-    font-family: 'Playfair Display', serif;
-    font-weight:normal;
-} */
+.floated{
+    float: left;
+    width: 750px;
+    padding: 25px;
+}
 
 /* SCROLLBAR */
 /* width */
