@@ -46,7 +46,7 @@ Phones: max-width: 480px
     color: #fff;
     /* font-size: 13px; */
     font-size: 1.05rem;
-    padding: .7rem 1.2rem;
+    padding: 1.2rem 1.7rem;
     line-height: 1;
     border-radius: 2rem;
     transition: .4s ease;
@@ -125,6 +125,7 @@ h3
     font-size: 20px;
     line-height: 28px;
     font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
 p{
@@ -140,13 +141,17 @@ p{
     margin: 0px !important;
     height: 800px;
     padding:5% 5% 5% 5%;
-    opacity: 0.8
+    opacity: 0.8;
+    border-radius:4px;
 }
 
 .floated{
     float: left;
     width: 600px;
-    padding: 25px;
+    padding-left:0px;
+    padding-right: 40px;
+    padding-top:25px;
+    padding-bottom:40px;
 }
 
 /* SCROLLBAR */
