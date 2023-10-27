@@ -46,11 +46,12 @@ Phones: max-width: 480px
     color: #fff;
     /* font-size: 13px; */
     font-size: 1.05rem;
-    padding: 1.2rem 1.7rem;
+    padding: 1.1rem 1.6rem;
     line-height: 1;
     border-radius: 2rem;
     transition: .4s ease;
     font-family: 'Inter', sans-serif;
+    font-weight:500;
 }
 .navbar ul li .active,
 .navbar ul li a:hover{
@@ -66,7 +67,7 @@ Phones: max-width: 480px
 .navbar ul li:hover .submenu-1{
     display: block !important;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: -10px;
 }
 
