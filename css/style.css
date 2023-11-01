@@ -75,7 +75,7 @@ Phones: max-width: 480px
     display: block !important;
     color:#576dce;
     margin: 5px;
-    padding: .7rem 1.2rem;
+    padding: .6rem 1.1rem;
     line-height: 1;
     border-radius: 2rem;
     transition: .4s ease;
@@ -128,9 +128,9 @@ p{
     background-blend-mode: lighten;
     display: block;
     margin: 0px !important;
-    height: 800px;
+    height: 790px;
     padding:5% 5% 5% 5%;
-    border-radius:3px;
+    border-radius: 3px;
 }
 
 .floated{
