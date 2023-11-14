@@ -11,25 +11,33 @@ Phones: max-width: 480px
 }
 
 /* BACKGROUND */
+
 .container{
     overflow-y: scroll;
     width: 100vw;
     height: 100vh;
-    /* background-image: linear-gradient(rgba(48, 48, 48, 0.7),rgba(48, 48, 48, 0.7)), url(/assets/sea_on_rocks.jpg); */
-    background-image: url(/assets/torrent.jpg);
+    background-image: url(../assets/torrent.jpg);
     background-position: center;
     background-size: cover;
-    padding-left: 4%;
-    padding-right: 4%; 
+    /* padding-left: 4%;
+    padding-right: 4%;  */
     box-sizing: border-box;
     position: fixed;
     scroll-behavior: smooth;
 }
 
+.bottomSpacer{
+    width:100%;
+    height:40%;
+}
+
 /* NAVIGATION */
+
 .navbar{
     height: 12%;
-    display: flex;
+    padding-left:3%;
+    padding-top:4%;
+    display: -webkit-inline-box;
     align-items: center;
 }
 .navbar{
@@ -90,6 +98,8 @@ Phones: max-width: 480px
 
 .homecol{
     flex-basis: 30%;
+    padding-left: 3%;
+    padding-bottom: 8%;
 }
 
 /* TEXT */
@@ -124,11 +134,9 @@ p{
 }
 
 .whiteBlock{
-    background-color:#fff;
-    background-blend-mode: lighten;
-    display: block;
-    margin: 0px !important;
-    height: 790px;
+    background:white;
+    /* display: block; */
+    /* height: 790px; */
     padding:5% 5% 5% 5%;
     border-radius: 3px;
 }
@@ -141,6 +149,19 @@ p{
     padding-top:25px;
     padding-bottom:40px;
 }
+
+ /* moving text */
+ .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+  .reveal .active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 
 /* SCROLLBAR */
 /* width */
