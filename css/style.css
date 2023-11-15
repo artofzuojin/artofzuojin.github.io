@@ -92,7 +92,7 @@ Phones: max-width: 480px
 /* HOMEPAGE TEXT ALIGNMENT */
 .homerow{
     display: flex;
-    height: 88%;
+    height: 95%;
     align-items: center;
 }
 
@@ -101,6 +101,16 @@ Phones: max-width: 480px
     padding-left: 3%;
     padding-bottom: 8%;
 }
+
+@media screen and (max-width: 768px) {
+    .homerow {
+         flex-direction: column;
+    }
+ 
+    .homecol {
+     margin-bottom: 5%;
+    }
+ }
 
 /* TEXT */
 h1{
@@ -154,11 +164,11 @@ p{
  .reveal{
     position: relative;
     transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
+    opacity: 0.5;
+    transition: 1s all ease;
   }
 
-  .reveal .active{
+.reveal.active{
     transform: translateY(0);
     opacity: 1;
   }
