@@ -12,13 +12,14 @@ Phones: max-width: 480px
     scroll-behavior: smooth;
 }
 
-#img{
+.image{
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#img:hover {opacity: 0.7;}
+
+.image:hover {opacity: 0.7;}
 
 .modal {
   display: none; /* Hidden by default */
@@ -36,12 +37,41 @@ Phones: max-width: 480px
 
 .modal-content {
   margin: auto;
-  display: block;
+  display: flex;
   width: 80%;
   max-width: 700px;
+  align-items: stretch;
+  font-size:0;
 }
 
-#caption {
+.mySlides {
+  display: none;  
+}
+
+.mySlides img{
+  max-width:49.65%;
+  height:auto;
+  display:inline-block;
+  vertical-align: top;
+  margin-top:10px;
+}
+
+.descbox{
+  background-color:white;
+  width:49.65%;
+  vertical-align: top;
+  /* width:50%; */
+  /* max-width:50%; */
+  /* height: auto; */
+  display:inline-block;
+  flex:1;
+  min-height:100%;
+  margin-top:10px;
+  /* padding:5% 5% 5% 5%; */
+  /* text-align:center; */
+}
+
+/* #caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -55,7 +85,7 @@ Phones: max-width: 480px
 .modal-content, #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
-}
+} */
 
 @keyframes zoom {
   from {transform:scale(0)}
@@ -86,6 +116,33 @@ Phones: max-width: 480px
     width: 100%;
   }
 }
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 /* .imageBorder{
     border-style: solid;
