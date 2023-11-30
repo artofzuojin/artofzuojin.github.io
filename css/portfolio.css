@@ -13,9 +13,14 @@ Phones: max-width: 480px
 }
 
 .image{
-  border-radius: 5px;
+  flex: 1 0 calc(25%-20px);
+  margin:10px;
+  cursor:pointer;
+  margin:relative;
+  /* border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  position:relative; */
 }
 
 
@@ -25,7 +30,7 @@ Phones: max-width: 480px
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 150px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -42,18 +47,20 @@ Phones: max-width: 480px
   max-width: 700px;
   align-items: stretch;
   font-size:0;
+  flex-wrap:nowrap;
 }
 
 .mySlides {
-  display: none;  
+  display: none;
+  flex:1;  
 }
 
 .mySlides img{
-  max-width:49.65%;
+  min-width:49.65%;
   height:auto;
   display:inline-block;
   vertical-align: top;
-  margin-top:10px;
+  margin-top:0px !important;
 }
 
 .descbox{
@@ -66,9 +73,44 @@ Phones: max-width: 480px
   display:inline-block;
   flex:1;
   min-height:100%;
-  margin-top:10px;
-  /* padding:5% 5% 5% 5%; */
+  box-sizing: border-box;
+  padding:10% 5% 5% 3%;
   /* text-align:center; */
+}
+
+.descbox h2{
+  color:#576dce;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight:500;
+  letter-spacing: 1px;
+  /* position: fixed;
+  top: 30%;
+  transform: translateY(-50%); */
+}
+
+.descbox h3{
+  color:#a6a6a6;
+  font-size:15px;
+  margin-top: 2%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  /* position: fixed;
+  top: 27.5%;
+  transform: translateY(-50%); */
+}
+
+.descbox p{
+    color:#576dce;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    /* position: fixed;
+    top: 40%;
+    transform: translateY(-50%); */
 }
 
 /* #caption {
@@ -143,19 +185,12 @@ Phones: max-width: 480px
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-/* .imageBorder{
-    border-style: solid;
-    border-width: 5px;
-    border-color:#fff;
-} */
-
 .galleryPadding{
     padding: 5% 15% 5% 15%;
 }
 
 /* three columns */
-.threeColumn{
+/* .threeColumn{
     flex: 25%;
     max-width: 33%;
     padding: 10px;
@@ -165,6 +200,21 @@ Phones: max-width: 480px
     margin-top:10px;
     vertical-align: middle;
     width: 100%;
+} */
+
+.threeColumn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.threeColumn img{
+  width:30%;
+  height:auto;
+  border-radius:5px;
+  /* margin-top:10px;
+  vertical-align: middle;
+  width: 100%; */
 }
 
 .row {
@@ -203,10 +253,28 @@ Phones: max-width: 480px
   display: block;
 }
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 768px) {
+  .image {
+      flex: 1 0 calc(50% - 20px); /* 50% of the container width with margin */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+      flex: 1 0 calc(100% - 20px); /* 100% of the container width with margin */
+  }
+}
+
+@media screen and (min-height: 400px) {
+  .threeColumn {
+      flex-direction: row;
+  }
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns
 @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
-  }
+  } */
