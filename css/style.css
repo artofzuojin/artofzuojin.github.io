@@ -15,7 +15,7 @@ Phones: max-width: 480px
 .container{
     overflow-y: scroll;
     width: 100vw;
-    height: 100vh;
+    height:100vh;
     background-image: url(../assets/torrent.jpg);
     background-position: center;
     background-size: cover;
@@ -34,8 +34,9 @@ Phones: max-width: 480px
     height: 12%;
     padding-left:3%;
     padding-top:4%;
-    display: -webkit-inline-box;
+    display: inline-block;
     align-items: center;
+    top: auto;
 }
 .navbar{
     flex: 1;

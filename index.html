@@ -1,3 +1,7 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
 <html>
 
 <head>
@@ -12,17 +16,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display&display=swap" rel="stylesheet">
 
+
 </head>
 
 <body>
+    <script defer src="navbar_scroll.js"> </script>
     <div class="container"> 
         <!-- NAVBAR -->
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <nav>
                 <ul>
-                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="index.html" class="active">HOME</a></li>
                     <li> <a href="index.html#about">ABOUT</a></li>
-                    <li> <a href="philosophy.html" class="active">COLLECTIONS</a>
+                    <li> <a href="philosophy.html">COLLECTIONS</a>
                         <div class="submenu-1"> 
                             <ul>
                                 <li> <a href="philosophy.html">PHILOSOPHY SERIES</a></li>
@@ -78,7 +84,6 @@
         <div class="bottomSpacer">
         </div>
     </div>
-    <script src="../scroll_ani.js"> </script>
 </body>
 
 </html>
