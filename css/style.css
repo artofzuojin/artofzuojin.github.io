@@ -7,7 +7,7 @@ Phones: max-width: 480px
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    
+    /* overflow-x: hidden; */
 }
 
 /* BACKGROUND */
@@ -25,7 +25,7 @@ Phones: max-width: 480px
 }
 
 .bottomSpacer{
-    padding-bottom: 20%;
+    padding-bottom: 15%;
 }
 
 /* NAVIGATION */
@@ -47,6 +47,7 @@ Phones: max-width: 480px
     display: inline-block;
     /* margin-left: 80px; */
 }
+
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
@@ -59,11 +60,11 @@ Phones: max-width: 480px
     font-family: 'Inter', sans-serif;
     font-weight:500;
 }
+
 .navbar ul li .active,
 .navbar ul li a:hover{
     color:#576dce;
     background: #fff;
-
 }
 
 .submenu-1{
@@ -73,19 +74,59 @@ Phones: max-width: 480px
 .navbar ul li:hover .submenu-1{
     display: block !important;
     position: absolute;
-    margin-top: 40px;
-    margin-left: -10px;
+    margin-top: 37.5px;
+    margin-left: -23px;
 }
 
 .navbar ul li a:hover .submenu-1 ul{
     display: block !important;
     color:#576dce;
-    margin: 5px;
+    margin:10px;
     padding: .6rem 1.1rem;
     line-height: 1;
     border-radius: 2rem;
     transition: .4s ease;
 }
+
+.langbar {
+    height:12%;
+    padding-right:3%;
+    padding-top:4%;
+    flex:1;
+    text-align:right;
+    float:right;
+}
+
+.langbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.langbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.05rem;
+    padding: 1.1rem 1.6rem;
+    line-height: 1;
+    border-radius: 2rem;
+    transition: .4s ease;
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
+}
+
+.langbar ul li .active,
+.langbar ul li a:hover{
+    color:#576dce;
+    background: #fff;
+}
+
+/* .navbar ul li:hover a {
+    padding: 1.1rem 1.6rem;
+    line-height: 1;
+    border-radius: 2rem;
+    color: #576dce;
+    transition: .4s ease;
+} */
 
 /* HOMEPAGE TEXT ALIGNMENT */
 .homerow{
@@ -111,6 +152,7 @@ Phones: max-width: 480px
  }
 
 /* TEXT */
+
 h1{
     color:#fff;
     font-size: 100px;
@@ -180,6 +222,14 @@ p{
     transform: translateY(0);
     opacity: 1;
   }
+
+.upArrow {
+    display:block;
+    position:fixed;
+    top: 20px;
+    right: 75px;
+    visibility:hidden;
+}
 
 /* SCROLLBAR */
 /* width */

@@ -5,12 +5,20 @@ Phones: max-width: 480px
 
 .portContainer{
     background-color:#fff;
-    padding: 8% 12% 10% 12%;
+    padding: 8% 12% 8% 12%;
+    height:auto;
     /* overflow-y: scroll;
     width: 100vw;
     height: 100vh;
     scroll-behavior: smooth; */
     /* display: block; */
+}
+
+a.anchor{
+  display: block;
+  position: relative;
+  top: -135px;
+  visibility: hidden;
 }
 
 .portContainer h2 {
@@ -34,9 +42,9 @@ Phones: max-width: 480px
   /* height: auto; */
   display:inline-block;
   flex:1;
-  min-height:100%;
+  min-height:80%;
   box-sizing: border-box;
-  padding:15% 5% 5% 5%;
+  padding:12% 5% 5% 5%;
   /* text-align:center; */
 }
 
@@ -47,6 +55,7 @@ Phones: max-width: 480px
   font-family: 'Inter', sans-serif;
   font-weight:500;
   letter-spacing: 1px;
+  text-align: left;
   /* position: fixed;
   top: 30%;
   transform: translateY(-50%); */
@@ -58,6 +67,8 @@ Phones: max-width: 480px
   margin-top: 2%;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  letter-spacing: 1.5px;
+  text-align:left;
   /* position: fixed;
   top: 27.5%;
   transform: translateY(-50%); */
@@ -217,11 +228,14 @@ Phones: max-width: 480px
 }
 
 .enlarged {
-  padding: 10% 10% 10% 20%;
-  height: auto;
+  padding: 5% 10% 5% 15%;
+  height: fit-content;
   flex:inline-block;
 }
 
 .enlarged img {
   max-width: 40%;
+  margin-top:auto;
+  margin-bottom:auto;
+  display: inline-block;
 }

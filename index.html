@@ -20,14 +20,14 @@
 </head>
 
 <body>
-    <script defer src="navbar_scroll.js"> </script>
     <div class="container"> 
+        <script src="js/visibility_toggle.js"> </script>
         <!-- NAVBAR -->
         <div class="navbar" id="navbar">
             <nav>
                 <ul>
                     <li> <a href="index.html" class="active">HOME</a></li>
-                    <li> <a href="index.html#about">ABOUT</a></li>
+                    <li> <a href="index.html#about" onclick="toggleVisibility()">ABOUT</a></li>
                     <li> <a href="philosophy.html">COLLECTIONS</a>
                         <div class="submenu-1"> 
                             <ul>
@@ -41,10 +41,17 @@
                 </ul>
             </nav>
         </div>
+        <div class="langbar">
+            <ul>
+                <li> <a href="index.html" class="active"> ENGLISH </a></li>
+                <li> <a href='index_cn.html'> 中文 </a></li>
+            </ul>
+        </div>
         <!-- NAVBAR END -->
+        <!-- <span id="home" class="anchor"> </span> -->
         <div class="homerow">
             <div class="homecol">
-                <h1> JIN ZUO </h1>
+                <h1>JIN ZUO</h1>
                 <p> Love & art are the highest faith </p>
             </div>
         <div class="col">
@@ -54,6 +61,11 @@
         <span id="about" class="anchor"></span>
         <!-- <script src="scroll_ani.js" type="text/javascript"> </script> -->
         <div class="whiteBlock">
+            <!-- <div class="upArrow" id="upArrow">
+                <a href="index.html"> 
+                    <img src="assets/site_ui/top_btn.jpg" alt="back to top" style="width:40px;height:40px;object-fit:cover">
+                </a>
+            </div> -->
             <h2> ABOUT </h2>
             <div class="floated">
                 <img src="assets/artist_photo.jpg" alt="Jin Zuo.jpg" style="width:600px;height:455px;object-fit:cover"> 
